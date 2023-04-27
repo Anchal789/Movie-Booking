@@ -1,0 +1,223 @@
+body {
+    background-color: rgb(241, 245, 248);
+    margin: 0;
+    padding: 0;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    position: relative;
+
+    nav {
+        display: flex;
+        background-color: rgb(230, 118, 118);
+        position: sticky;
+        top: 0;
+        height: 75px;
+        justify-content: space-around;
+        border: 1px solid black;
+        z-index: 999;
+
+        img {
+            width: 250px;
+            height: auto;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            padding: 5px;
+
+            input {
+                border: none;
+                width: 200px;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid rgb(175, 174, 174);
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            button {
+                color: blue;
+                border: 1px solid blue;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: rgb(255, 255, 255);
+            }
+            
+        }
+
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 200px auto;
+        gap: 30px;
+
+        .left {
+            flex: 1;
+            border: 1px solid black;
+            position: sticky;
+            top: 70px;
+            height: calc(100vh - 75px);
+            text-align: center;
+            padding: 20px;
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            background-color: rgb(220, 253, 255);
+
+            .genreslist {
+                h1 {
+                }
+
+                ul {
+                    li {
+                        display: flex;
+                        font-weight: 500;
+                        list-style: none;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        // #myModal1 {
+        //     display: none;
+        //     position: fixed;
+        //     z-index: 1;
+        //     padding-top: 100px;
+        //     left: 0;
+        //     top: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     overflow: auto;
+        //     background-color: rgb(0, 0, 0);
+        //     background-color: rgba(0, 0, 0, 0.9);
+
+        //     #modalContent1{
+        //         background-color: #fefefe;
+        //         margin: auto;
+        //         padding: 20px;
+        //         border: 1px solid #888;
+        //         width: 60%;
+
+        //         #close1 {
+        //             color: #aaaaaa;
+        //             float: right;
+        //             font-size: 28px;
+        //             font-weight: bold;
+        //         }
+
+        //         #close1:hover,
+        //         #close1:focus {
+        //             color: #000;
+        //             text-decoration: none;
+        //             cursor: pointer;
+        //         }
+
+        //         #descriptionContainer {
+        //             #descriptionDiv {
+        //                 #image {
+        //                     display: flex;
+        //                     justify-content: center;
+        //                     align-items: center;
+
+        //                     img {}
+        //                 }
+
+        //                 #decscription {
+        //                     display: block;
+
+        //                     h2 {}
+
+        //                     span {
+        //                         display: flex;
+        //                         gap: 10px;
+
+        //                         h5 {}
+        //                     }
+
+        //                     p {
+        //                         text-transform: capitalize;
+        //                     }
+
+        //                     p {}
+        //                 }
+
+        //                 h6 {}
+
+        //                 button {
+        //                     color: blue;
+        //                     display: flex;
+        //                     justify-content: center;
+        //                     align-items: center;
+        //                     border: 1px solid blue;
+        //                     border-radius: 5px;
+        //                     padding: 5px;
+        //                     height: min-content;
+        //                     background-color: rgb(255, 255, 255);
+        //                     a{
+        //                         text-decoration: none;
+        //                         color: blue;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+
+
+        .right {
+            div {
+                position: sticky;
+                flex: 1;
+                top: 75px;
+                padding: 15px;
+                background-color: white;
+            }
+
+            #movieContainer {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 30px;
+
+                span {
+                    padding: 10px 10px 10px 10px;
+                    border: 1px solid rgb(178, 178, 178);
+                    border-radius: 5px;
+                    
+                    img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 18vw;
+                        border-radius: 5px;
+                    }
+
+                    h5 {}
+
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            text-transform: capitalize;
+                        }
+
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

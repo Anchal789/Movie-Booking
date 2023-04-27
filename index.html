@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Booking App</title>
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/049c186ce9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet/less" type="text/css" href="style.less" />
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <nav>
+            <img src="My project.png" width="30%" alt="Boo-King" onclick="movieContainer()">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button type="button" id="search">Search</button>
+                <button type="button" onclick="movieContainer()">New Release</button>
+            </div>
+            <!-- <input type="number" oninput="console.log(event.target.value)"> -->
+        </nav>
+        <main>
+            <div class="left">
+                <div class="genreslist">
+                    <h1>Genres</h1>
+                    <ul id="genremovieList">
+                        <!-- The list of genre is been fetched -->
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id="myModal1" class="modal">
+                <div class="modal-content modalContent" id="modalContent1">
+                    <span class="close close" id="close1">&times;</span>
+                    <div id="descriptionContainer">
+
+                    </div>
+                </div>
+            </div>
+            <div id="myModal2" class="modal">
+                <div class="modal-content modalContent" id="modalContent2">
+                    <span class="close close" id="close2">&times;</span>
+                    <div id="checkOutPageDiv">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div>
+                    <h2 id="title">Now Playing</h2>
+                </div>
+                <div id="movieContainer">
+
+                </div>
+            </div>
+
+        </main>
+        <script src="script.js"></script>
+    </body>
+
+</html>
